@@ -1,0 +1,22 @@
+﻿<Window x:Class="forum.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:forum"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="450" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Отчеты">
+                <MenuItem Header="Популярность рецептов" Click="ShowRecipePopularityReport_Click"/>
+                <MenuItem Header="Активность пользователей" Click="ShowUserActivityReport_Click"/>
+                <MenuItem Header="Распределение по категориям" Click="ShowCategoryRecipeReport_Click"/>
+                <MenuItem Header="Анализ комментариев" Click="ShowCommentAnalysisReport_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid>
+            <!-- Здесь можно разместить другие элементы управления для администрирования -->
+        </Grid>
+    </DockPanel>
+</Window>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3592aeaacb694e579d773c39b2fb4f78" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Categories" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Comments" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.RecipeRatings" Width="1.5" PointX="8.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Recipes" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Roles" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Users" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK__Recipes__Categor__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Comments__Recipe__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Comments__UserID__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__RecipeRat__Recip__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__RecipeRat__UserI__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Recipes__UserID__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Users__RoleID__3E52440B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

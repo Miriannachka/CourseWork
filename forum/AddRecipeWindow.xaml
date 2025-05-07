@@ -1,0 +1,63 @@
+﻿<Window x:Class="forum.AddRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:forum"
+        mc:Ignorable="d"
+        Title="AddRecipeWindow" Height="550" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- 0 Название -->
+            <RowDefinition Height="Auto"/>
+            <!-- 1 TextBox для названия -->
+            <RowDefinition Height="Auto"/>
+            <!-- 2 Описание -->
+            <RowDefinition Height="Auto"/>
+            <!-- 3 TextBox для описания -->
+            <RowDefinition Height="Auto"/>
+            <!-- 4 Ингредиенты -->
+            <RowDefinition Height="Auto"/>
+            <!-- 5 TextBox для ингредиентов -->
+            <RowDefinition Height="Auto"/>
+            <!-- 6 Инструкции -->
+            <RowDefinition Height="Auto"/>
+            <!-- 7 TextBox для инструкций -->
+            <RowDefinition Height="Auto"/>
+            <!-- 8 Категория -->
+            <RowDefinition Height="Auto"/>
+            <!-- 9 ComboBox для категории -->
+            <RowDefinition Height="Auto"/>
+            <!-- 10 Изображение -->
+            <RowDefinition Height="Auto"/>
+            <!-- 11 StackPanel для выбора изображения -->
+            <RowDefinition Height="Auto"/>
+            <!-- 12 Кнопка Сохранить -->
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Название:" Grid.Row="0" Margin="0,0,0,5"/>
+        <TextBox x:Name="TitleTextBox" Grid.Row="1" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Описание:" Grid.Row="2" Margin="0,0,0,5"/>
+        <TextBox x:Name="DescriptionTextBox" Grid.Row="3" Margin="0,0,0,10" TextWrapping="Wrap" AcceptsReturn="True" Height="50"/>
+
+        <TextBlock Text="Ингредиенты:" Grid.Row="4" Margin="0,0,0,5"/>
+        <TextBox x:Name="IngredientsTextBox" Grid.Row="5" Margin="0,0,0,10" TextWrapping="Wrap" AcceptsReturn="True" Height="75"/>
+
+        <TextBlock Text="Инструкции:" Grid.Row="6" Margin="0,0,0,5"/>
+        <TextBox x:Name="InstructionsTextBox" Grid.Row="7" Margin="0,0,0,10" TextWrapping="Wrap" AcceptsReturn="True" Height="100"/>
+
+        <TextBlock Text="Категория:" Grid.Row="8" Margin="0,0,0,5"/>
+        <ComboBox x:Name="CategoryComboBox" Grid.Row="9" Margin="0,0,0,10" SelectionChanged="CategoryComboBox_SelectionChanged"/>
+
+        <TextBlock Text="Изображение:" Grid.Row="10" Margin="0,0,0,5"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="11" Margin="0,0,0,10">
+            <TextBox x:Name="ImagePathTextBox" Width="200" IsReadOnly="False"  ToolTip="Введите URL изображения"/>
+            <Button Content="Выбрать URL" Click="SelectImageButton_Click"/>
+        </StackPanel>
+
+        <Button Content="Сохранить рецепт" Click="SaveRecipeButton_Click" Grid.Row="12"/>
+
+    </Grid>
+</Window>
